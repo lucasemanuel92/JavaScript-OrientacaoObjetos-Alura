@@ -18,7 +18,7 @@ function User(name, email) {
     this.name = name;
     this.email = email;
 
-    this.exibeInfo = function() {
+    this.exibeInfo = function () {
         console.log(this.name, this.email);
     }
 }
@@ -34,30 +34,30 @@ const outroUser = {
 newUser.exibeInfo.call(outroUser);
 
 // Usar ".call()" dentro de uma função
- function exibirMensagem(nome, email) {
+function exibirMensagem(nome, email) {
     console.log(`usuário: ${nome}, email: ${email}`)
- };
+};
 
- const USer = {
+const USer = {
     nome: "Oliveira",
     email: "o@o.com",
-    executarFuncao: function(fn) {
+    executarFuncao: function (fn) {
         fn.call(user, this.nome, this.email)
     }
- }
+}
 
- USer.executarFuncao(exibirMensagem);
+USer.executarFuncao(exibirMensagem);
 
- // MÉTODO "APPLY"
- // Funciona da mesma forma que o ".call()", mas recebe um array
- function exibeMensagem(nome, email) {
+// MÉTODO "APPLY"
+// Funciona da mesma forma que o ".call()", mas recebe um array
+function exibeMensagem(nome, email) {
     console.log(`usuário: ${nome}, email ${email}`)
-   }
-    const USER = {
+}
+const USER = {
     nome: 'Carvalho',
     email: 'c@ca.com',
-    executaFuncao: function(fn) {
-      fn.apply(user, [this.nome, this.email])
+    executaFuncao: function (fn) {
+        fn.apply(user, [this.nome, this.email])
     }
-   }
-    USER.executaFuncao(exibeMensagem)
+}
+USER.executaFuncao(exibeMensagem)
