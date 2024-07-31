@@ -21,6 +21,7 @@ const admin = {
     }
 };
 
-Object.setPrototypeOf(admin, user);
+// Essa forma é de pegar propriedades de outro lugar
+Object.setPrototypeOf(admin, user); // Object.setPrototypeOf(QUEM HERDA, QUEM PASSA A HERANÇA)
 admin.criarCurso();
 admin.exibirInfos();
