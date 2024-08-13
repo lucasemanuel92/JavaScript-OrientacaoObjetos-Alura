@@ -1,4 +1,5 @@
-class User {
+// É uma forma de enviar essa classe de forma padrão
+export default class User {
     constructor(nome, email, nascimento, role, ativo = true) {
         this.nome = nome;
         this.email = email;
@@ -12,7 +13,7 @@ class User {
 }
 
 const novoUser = new User('Lucas', 'l@l.com', '15.03.1992');
-//console.log(novoUser);
-//console.log(novoUser.exibirInfos());
+console.log(novoUser);
+console.log(novoUser.exibirInfos());
 
 console.log(User.prototype.isPrototypeOf(novoUser));

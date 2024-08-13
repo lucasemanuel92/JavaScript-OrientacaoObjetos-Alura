@@ -1,0 +1,21 @@
+{
+  "name": "javascript-orientacaoobjetos-alura",
+  "version": "1.0.0",
+  "description": "Esse repositório é relacionado ao JavaScript: programação Orientada a Objetos, oferecido na plataforma Alura. O curso conta com estudos na área de Javascript. O curso aborda temas como função e protótipos, classe, objeto, herança, encapsulamento,\r polimorfismo e outros temas parelelos.",
+  "main": "index.js",
+  "type" :"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasemanuel92/JavaScript-OrientacaoObjetos-Alura.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasemanuel92/JavaScript-OrientacaoObjetos-Alura/issues"
+  },
+  "homepage": "https://github.com/lucasemanuel92/JavaScript-OrientacaoObjetos-Alura#readme"
+}
