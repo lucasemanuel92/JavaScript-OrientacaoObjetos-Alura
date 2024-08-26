@@ -12,3 +12,6 @@ console.log(novoUser.exibirInfos());
 // novoUser.nome = 'Pedro';
 
 // console.log(novoUser.nome)
+
+const novoAdmin = new Admin('Luiz', 'l@l.com');
+console.log(novoAdmin.nome);

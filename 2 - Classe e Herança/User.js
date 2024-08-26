@@ -13,6 +13,9 @@ export default class User {
         this.#role = role || "estudante";
         this.#ativo = ativo;
     }
+    get nome() {
+        return this.#nome
+    }
 
     #montaObjUser() {
         return ({

@@ -9,12 +9,6 @@ export default class Admin extends User {
     criarCurso(nomeDoCurso, qtdVagas) {
         return `Curso ${nomeDoCurso} criado com ${qtdVagas} vagas.`
     }
-
-    // Teste
-    exibirNome() {
-        return `${this.#nome}`
-    }
-    
     // Os métodos criados daqui para baixo são exercícios propostos no curso
     excluirCurso(nomeDoCurso) {
         return ` O ${nomeDoCurso} foi descontinuado`
