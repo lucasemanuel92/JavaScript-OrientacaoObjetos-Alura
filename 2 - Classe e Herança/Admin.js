@@ -9,6 +9,12 @@ export default class Admin extends User {
     criarCurso(nomeDoCurso, qtdVagas) {
         return `Curso ${nomeDoCurso} criado com ${qtdVagas} vagas.`
     }
+
+    // Teste
+    exibirNome() {
+        return `${this.#nome}`
+    }
+    
     // Os métodos criados daqui para baixo são exercícios propostos no curso
     excluirCurso(nomeDoCurso) {
         return ` O ${nomeDoCurso} foi descontinuado`
@@ -20,6 +26,6 @@ export default class Admin extends User {
 }
 
 const novoAdmin = new Admin("Pedro", "r@r.com", "2000-03-02")
-// console.log(novoAdmin)
+// console.log(novoAdmin.exibirInfos())
 // console.log(novoAdmin.criarCurso('Java', 20))
 // console.log(novoAdmin.desativarPerfil())
