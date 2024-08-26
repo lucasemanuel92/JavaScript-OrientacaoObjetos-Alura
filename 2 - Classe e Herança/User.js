@@ -1,7 +1,8 @@
 // É uma forma de enviar essa classe de forma padrão
 export default class User {
+    #nome // Essa é uma forma de manter o atributo privado
     constructor(nome, email, nascimento, role, ativo = true) {
-        this.nome = nome;
+        this.#nome = nome;
         this.email = email;
         this.nascimento = nascimento;
         this.role = role || "estudante";
@@ -9,7 +10,7 @@ export default class User {
     }
 
     exibirInfos() {
-        return `${this.nome}, ${this.email}`
+        return `${this.#nome}, ${this.email}`
     }
     // Os métodos criados daqui para baixo são exercícios propostos no curso
     criarPerfil() {
@@ -34,11 +35,11 @@ export default class User {
     }
 }
 
-const novoUser = new User('Lucas', 'l@l.com', '15.03.1992');
-// Vai Exibir todas as infos da classe User
-console.log(novoUser);
-// Vai exibir apenas as infos da função exibir classe
-console.log(novoUser.exibirInfos());
+// const novoUser = new User('Lucas', 'l@l.com', '15.03.1992');
+// // Vai Exibir todas as infos da classe User
+// console.log(novoUser);
+// // Vai exibir apenas as infos da função exibir classe
+// console.log(novoUser.exibirInfos());
 
-console.log(User.prototype.isPrototypeOf(novoUser));
-console.log(novoUser.exibirListaCursos())
+// console.log(User.prototype.isPrototypeOf(novoUser));
+// console.log(novoUser.exibirListaCursos())
