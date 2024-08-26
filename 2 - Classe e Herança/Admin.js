@@ -9,12 +9,12 @@ class Admin extends User {
     criarCurso(nomeDoCurso, qtdVagas) {
         return `Curso ${nomeDoCurso} criado com ${qtdVagas} vagas.`
     }
-        // Os métodos criados daqui para baixo são exercícios propostos no curso
+    // Os métodos criados daqui para baixo são exercícios propostos no curso
     excluirCurso(nomeDoCurso) {
         return ` O ${nomeDoCurso} foi descontinuado`
     }
     desativarPerfil() {
-        `O perfil do aluno ${this.nome} foi desativado \n Status = ${this.ativo = false}`
+        `O perfil do aluno ${this.nome} foi desativado`
     }
 
 }
